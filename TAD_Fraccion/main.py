@@ -1,0 +1,15 @@
+from fraccion import Fraccion
+def main():
+    f1=Fraccion(2,4); f2=Fraccion(1,2)
+    print("TAD FRACCIÓN")
+    print("f1:",f1,"| f2:",f2)
+    print("Numerador:",f1.numerador())
+    print("Denominador:",f1.denominador())
+    print("Suma:",f1.sumar(f2))
+    print("Resta:",f1.restar(f2))
+    print("Multiplicación:",f1.multiplicar(f2))
+    print("Simplificada:",f1.simplificar())
+    print("¿Son iguales?:",f1.son_iguales(f2))
+    try: Fraccion(5,0)
+    except ValueError as e: print("Error controlado:",e)
+if __name__=="__main__": main()
